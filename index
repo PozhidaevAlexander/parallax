@@ -3,10 +3,27 @@
 	<head>
 		<title>Parallax</title>
 		<style>
-			
+			*{
+				margin:0;
+				padding:0;
+			}
+			#image{
+				position:relative;
+				z-index:1;	
+			}
+			#content{
+				width: 100%;
+				height: 750px;
+				margin-top: -10px;
+				background-color:#eeeff3;
+				position:relative;
+				z-index:0;
+			}
+
 		</style>
 	</head>
 	<body>
-		<img src="img/slide1.jpg" width="100%" hieght="710px">
+		<img id="image" src="img/slide1.jpg" width="100%" hieght="710px">
+		<div id="content"></div>
 	</body>
 </html>
